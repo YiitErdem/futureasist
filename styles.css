@@ -1,0 +1,191 @@
+/* Azonix Fontunu Dahil Et */
+@font-face {
+    font-family: 'Azonix';
+    src: url('fonts/Azonix.otf') format('opentype');
+}
+
+/* Acumin Variable Concept Fontunu Dahil Et */
+@font-face {
+    font-family: 'AcuminVariableConcept';
+    src: url('fonts/AcuminVariableConcept.ttf') format('truetype');
+}
+
+/* ITC Avant Garde Gothic Pro Fontunu Dahil Et */
+@font-face {
+    font-family: 'AvantGardeGothicPro';
+    src: url('fonts/ITCAvantGardeGothicPro.otf') format('opentype');
+}
+
+/* Genel stil */
+body {
+    font-family: 'AcuminVariableConcept', sans-serif;
+    background-color: black;
+    color: white;
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* Ekranın tamamını kapsayacak şekilde sabitlendi */
+    width: 100vw;
+    overflow: hidden;
+    position: relative;
+}
+
+.container {
+    max-width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+}
+
+/* Geri Sayım ve Bilgi Mesajı */
+.info-section {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    display: flex;
+    justify-content: space-between;
+    width: 90%; /* Ekranın büyük kısmını kaplasın */
+}
+
+.countdown {
+    font-family: 'Azonix', sans-serif;
+    font-size: 6vw;
+    color: #7272f7;
+    margin: 0;
+    width: 30%;
+    text-align: left;
+}
+
+.countdown h1 {
+    font-family: 'Azonix', sans-serif;
+    font-size: 6vw;
+    color: #7272f7;
+    margin: 0;
+}
+
+.countdown p {
+    font-size: 1.8vw;
+    color: #7272f7;
+}
+
+.about {
+    width: 60%; /* Bilgi kısmı genişliğini ayarladık */
+    font-family: 'Josefin Sans', sans-serif;
+    color: #b5b5f8;
+    font-size: 1.2vw;
+    line-height: 1.2;
+    text-align: start;
+    text-transform: uppercase;
+}
+
+/* "Smart Care, Happy Living" Slogan (Bölge 1) */
+/* "Smart Care, Happy Living" Slogan (Bölge 1) */
+.slogan {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    width: 100%;
+    font-family: 'Josefin Sans', sans-serif; /* İstenen font */
+    text-transform: uppercase;
+}
+
+.slogan p {
+    font-size: 2.4vw; /* Ekran genişliğine göre ayarlandı */
+    font-weight: 400;  /* İnce font ağırlığı */
+    letter-spacing: 0.5vw;  /* Harfler arası boşluk */
+    color: #8989f3;  /* Hafif bir açık renk */
+    line-height: 1.2;  /* Satır yüksekliği */
+    margin: 0;
+    padding: 0;
+    text-shadow: 0px 2px 20px rgb(255, 255, 255); /* Beyaz parlaklık */
+}
+
+/* Sol Alttaki Resim (Bölge 2) */
+.left-image-section {
+    position: absolute;
+    bottom: 20%;
+    left: 5%;
+    max-width: 40%;
+}
+
+.left-image-section img {
+    width: 133%;
+    height: auto;
+}
+
+/* Sağ Alttaki Future Assist Coming Soon Resmi (Bölge 3) */
+.right-image-section {
+    position: absolute;
+    bottom: 20%;
+    right: 20%;
+    max-width: 60%;
+}
+
+.right-image-section img {
+    width: 133%;
+    height: auto;
+}
+
+/* E-posta Kısmı (Sol Alt Kısımda Sabitlenmiş) */
+.email-updates {
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+    display: flex;
+    align-items: center;
+}
+
+.email-updates input {
+    padding: 10px;
+    width: 250px;
+    border: none;
+    border-radius: 25px 0 0 25px;
+    background-color: #e6e6fa;
+    color: #000000;
+    font-family: 'AcuminVariableConcept', sans-serif;
+    font-size: 1.2rem;
+    outline: none;
+}
+
+.email-updates button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 0 25px 25px 0;
+    background-color: #6666ff;
+    color: white;
+    font-family: 'AcuminVariableConcept', sans-serif;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.email-updates button:hover {
+    background-color: #000000;
+}
+
+/* İletişim Bilgileri */
+.contact-info {
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+    text-align: right;
+}
+
+.contact-info p {
+    font-size: 1.2rem;
+    color: #ccccff;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: flex-end;
+    margin: 10px 0;
+}
+
+.social-icons img {
+    width: 25px;
+    margin: 0 10px;
+}
